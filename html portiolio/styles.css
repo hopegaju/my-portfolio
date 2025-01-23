@@ -1,0 +1,347 @@
+:root{
+    ---headerBackground: #013220;
+    --navBackground:#025838;
+    --headColor:#fff;
+    --navHoverColor:#023a26;
+    --aColor:#2ebb72;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* line-height: 1.6; */
+}
+header {
+    background: var(---headerBackground);
+    color: #fff;
+    /* padding: 1rem; */
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background: var(--navBackground);
+}
+nav a {
+    color: var(--headColor);
+    padding: 0.75rem;
+    text-decoration: none;
+    transition: background 2s;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--navBackground);
+    position: fixed; 
+    top: 0;
+    left:   0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav a:hover {
+    background: var(--navHoverColor);
+    transform: translateY(1px);
+}
+/* Target the #webdev section */
+#webdev {
+    margin-top: 150px;
+    background-color: #f9f9f9; /* Light background */
+    padding: 40px 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style the heading in the #webdev section */
+#webdev h2 {
+    font-size: 2rem;
+    color: var(---headerBackground);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the paragraph in the #webdev section */
+#webdev p {
+    font-size: 1rem;
+    color: var(---headerBackground);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Style individual project cards */
+#webdev .project {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#webdev .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Style project titles */
+#webdev .project h3 {
+    font-size: 1.5rem;
+    color: var(---headerBackground); /* Primary color */
+    margin-bottom: 10px;
+}
+
+/* Style project descriptions */
+#webdev .project p {
+    font-size: 1rem;
+    color: var(---headerBackground);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+/* Style the #content section */
+#content {
+    background-color: #f9f9f9; /* Light background */
+    padding: 40px 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style the heading in the #content section */
+#content h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the paragraph in the #content section */
+#content p {
+    font-size: 1rem;
+    color: var(---headerBackground);;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Style individual project cards within #content */
+#content .project {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#content .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Style project titles within #content */
+#content .project h3 {
+    font-size: 1.5rem;
+    color: var(---headerBackground);; /* Primary color */
+    margin-bottom: 10px;
+}
+
+/* Style project descriptions within #content */
+#content .project p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Style the card */
+.card {
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    margin: 20px; /* Space around the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+/* Add hover effect for the card */
+.card:hover {
+    transform: translateY(-5px); /* Moves card up slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker, bigger shadow */
+}
+
+/* Style the card title */
+.card h3 {
+    font-size: 1.5rem;
+    color: var(---headerBackground); /* Dark gray text */
+    margin-bottom: 10px;
+}
+
+/* Style the card description */
+.card p {
+    font-size: 1rem;
+    color: var(---headerBackground); /* Medium gray text */
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Style the button */
+.card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* Primary color */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded button corners */
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.card .btn:hover {
+    background-color: #2874a6; /* Darker blue */
+}
+#about {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 3rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+  
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+#about ul {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 20px; /* Indents the list */
+    margin-top: 20px;
+    color: var(--headerBackground); /* Matches your primary color */
+    font-size: 1rem;
+    line-height: 1.8; /* Spacing between lines */
+}
+#about ul li {
+    margin-bottom: 10px; /* Adds spacing between list items */
+    font-size: 1rem;
+    color: #333; /* A softer color for text */
+}
+#about ul {
+    list-style-type: none; /* Removes default bullet points */
+}
+
+#about ul li::before {
+    content: "✓"; /* Adds a checkmark before each list item */
+    color: var(--headerBackground); /* Matches your primary color */
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #013220; /* Text color */
+}
+  
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #013220; /* Heading color */
+}
+  
+#contact form {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+}
+  
+#contact label {
+    font-size: 1rem;
+    color: #013220; /* Label color */
+}
+  
+#contact input, #contact textarea {
+    padding: 0.45rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #013220; /* Input text color */
+}
+  
+#contact input:focus, #contact textarea:focus {
+    border-color: #013220; /* Focused input border color */
+    outline: none;
+}
+  
+#contact button {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #013220;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+  
+#contact button:hover {
+    background-color: #025a3e; /* Darker shade for hover effect */
+}
+  
+a {
+    text-decoration: none; /* Removes the underline */
+    color: var(--navHoverColor);        /* Keeps the link color consistent with surrounding text */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+a:hover {
+    color: var(--aColor); /* Change to your preferred hover color */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(---headerBackground);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 8px var(--navHoverColor);
+}
+/* responsiveness */
+/* mini ipad  */
+
+@media (max-width: 768px) {
+    #content {
+        padding: 20px;
+    }
+    .project {
+        margin-bottom: 15px;
+    }
+    .card {
+        margin: 10px;
+    }
+}
+/* cellphone  */
+
+@media (max-width: 480px) {
+    #content {
+        padding: 10px;
+    }
+    .project {
+        margin-bottom: 10px;
+    }
+    .card {
+        margin: 5px;
+    }
+}
